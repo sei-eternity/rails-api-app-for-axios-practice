@@ -54,6 +54,8 @@
 1. In `config/database.yml`, remove `username` and `password` from `production`
 1. `git add -A`
 1. `git commit -m 'first commit'`
+1. `heroku login`
+1. `heroku create <NAME-OF-APP>`
 1. `git push heroku master`
 1. `heroku run rake db:migrate`
 1. `heroku run rake db:seed`
