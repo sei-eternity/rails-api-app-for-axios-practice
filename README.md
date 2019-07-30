@@ -21,7 +21,17 @@
 
 <br>
 
-## Instructions to build locally
+## To run locally
+
+1. `git clone https://github.com/sei-eternity/rails-api-app-for-axios-practice`
+1. `cd`
+1. `bundle`
+1. `rails db:create db:migrate db:seed`
+1. `rails s`
+
+<br>
+
+## Instructions to build from scratch
 
 1. `rails new api-only --api -d postgresql --skip-test`
 1. `Gemfile`
@@ -31,23 +41,21 @@
    gem 'rack-cors'
    ```
 
-````
 1. `bundle`
 1. `rails g scaffold events name description`
-2. `rails db:create db:migrate db:seed`
-
+1. `rails db:create db:migrate db:seed`
 1. `db/seeds.rb`
 
-	```ruby
-	10.times do
-	  newEvent = {
-	    name: Faker::Coffee.unique.blend_name,
-	    description: Faker::Hipster.sentence(5)
-	  }
+   ```ruby
+   10.times do
+     newEvent = {
+       name: Faker::Coffee.unique.blend_name,
+       description: Faker::Hipster.sentence(5)
+     }
 
-	  Event.create(newEvent)
-	end
-````
+     Event.create(newEvent)
+   end
+   ```
 
 1. `rails s`
 
