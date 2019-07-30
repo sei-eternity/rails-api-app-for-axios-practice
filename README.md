@@ -11,16 +11,6 @@
 
 <br>
 
-## Additional Resources
-
-- [Faker Gem](https://github.com/stympy/faker)
-- [Rails API](https://guides.rubyonrails.org/api_app.html)
-- [Heroku Deploy](https://devcenter.heroku.com/articles/getting-started-with-rails5)
-- [CORS: Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-- [rack-cors gem](https://github.com/cyu/rack-cors)
-
-<br>
-
 ## To run locally
 
 1. `git clone https://github.com/sei-eternity/rails-api-app-for-axios-practice`
@@ -66,4 +56,14 @@
 1. `git commit -m 'first commit'`
 1. `git push heroku master`
 1. `heroku run rake db:migrate`
-1. `heroku run rake db:migrate`
+1. `heroku run rake db:seed`
+
+<br>
+
+## Additional Resources
+
+- [Faker Gem](https://github.com/stympy/faker)
+- [Rails API](https://guides.rubyonrails.org/api_app.html)
+- [Heroku Deploy](https://devcenter.heroku.com/articles/getting-started-with-rails5)
+- [CORS: Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [rack-cors gem](https://github.com/cyu/rack-cors)
